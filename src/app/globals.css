@@ -1,0 +1,37 @@
+/* src/styles/globals.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lavishly+Yours&family=Merienda:wght@300..900&family=Miss+Fajardose&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #213555;
+  --primary: #9fd1ea;
+  --textprimary: #213555;
+  --darkprimary:#3295c5;
+  --primarylight: #e5f1f9;
+  --gold: #705a23;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #213555;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* Membuat scrolling lebih halus */
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
