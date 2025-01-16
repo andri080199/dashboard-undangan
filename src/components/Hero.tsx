@@ -11,24 +11,24 @@ const ResponsiveSection: React.FC = () => {
           <Image
             src="/images/Hero.png" 
             alt="Example"
-            width={600} // Sesuaikan lebar gambar
-            height={600} // Sesuaikan tinggi gambar
-            className="rounded-lg"
+            width={600} 
+            height={600} 
+            className=""
           />
         </div>
 
         {/* Desk and WA*/}
         <div className="md:w-1/2 text-center md:text-left px-4">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-primary">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-primarylight">
             Buat Undangan Digital Tanpa Ribet
           </h2>
-          <p className="mb-6 pt-4 text-primary text-sm md:text-base">
+          <p className="mb-6 pt-4 text-primarylight text-sm md:text-lg">
           "Buat undangan pernikahan yang unik dan mudah dibagikan hanya dalam hitungan menit! Undangan digital kami hadir dengan berbagai template menarik dan bisa disesuaikan dengan tema pernikahan impian Anda."
           </p>
           <div className="flex flex-col md:flex-row justify-center md:justify-start gap-4">
             <WhatsAppButton phoneNumber={"6282375473733"}/>
-            <button className="px-6 py-2 bg-gray-100 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-200">
-              Get Started
+            <button className="px-6 py-2 bg-gray-100 text-textprimary font-semibold rounded-lg shadow-md hover:bg-gray-200">
+              Lihat Tema
             </button>
           </div>
         </div>

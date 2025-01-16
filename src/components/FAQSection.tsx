@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FiChevronUp } from "react-icons/fi";
 
 interface FAQItem {
   question: string;
@@ -44,28 +44,28 @@ const FAQSection: React.FC = () => {
 
   return (
     <section className="py-12 px-6 md:px-20 bg-primary">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+      <div className="max-w-2xl mx-auto">
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Pertanyaan yang Sering Diajukan
         </h2>
         <div className="space-y-6">
           {faqItems.map((item, index) => (
             <div
               key={index}
-              className="bg-primarylight p-6 rounded-lg shadow-md"
+              className="bg-primarylight p-6 rounded-lg shadow-lg shadow-darkprimary"
             >
               <div
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleAnswer(index)}
               >
-                <h3 className="text-sm md:text-lg font-semibold text-gray-800">
+                <h3 className="text-sm md:text-lg font-semibold text-textprimary">
                   {item.question}
                 </h3>
-                <span className="text-lg text-gray-500">
+                <span className="text-lg text-textprimary">
                   {openIndex === index ? (
                     <FiChevronUp className="transition-transform duration-300" />
                   ) : (
-                    <FiChevronDown className="transition-transform duration-300" />
+                    <FiChevronUp className="transition-transform duration-300 -rotate-180" />
                   )}
                 </span>
               </div>

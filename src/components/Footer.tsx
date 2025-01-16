@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -65,36 +66,23 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="flex justify-center space-x-6 mb-6">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-white transition duration-300"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="w-6 h-6"
-            >
-              <path d="M22.675 0H1.325C.594 0 0 .594 0 1.326v21.348C0 23.406.594 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.892-4.788 4.655-4.788 1.325 0 2.465.099 2.794.143v3.24l-1.917.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.586l-.467 3.622h-3.119V24h6.116c.729 0 1.325-.594 1.325-1.326V1.326C24 .594 23.406 0 22.675 0z" />
-            </svg>
-          </a>
+        <div className="flex justify-center space-x-2 mb-6">
+          <h1 className="text-lg text-primarylight">
+            follow us on
+          </h1>
           <a
             href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition duration-300"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="w-6 h-6"
-            >
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.346 3.608 1.32.976.976 1.26 2.243 1.32 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.346 2.633-1.32 3.608-.976.976-2.243 1.26-3.608 1.32-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.346-3.608-1.32-.976-.976-1.26-2.243-1.32-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.346-2.633 1.32-3.608.976-.976 2.243-1.26 3.608-1.32 1.266-.058 1.646-.07 4.85-.07zM12 0C8.741 0 8.332.014 7.052.072 5.774.131 4.503.383 3.445 1.44c-1.057 1.058-1.31 2.33-1.368 3.607C1.955 6.662 1.942 7.071 1.942 10.33c0 3.258.013 3.668.071 4.948.058 1.276.31 2.548 1.368 3.606 1.058 1.058 2.331 1.31 3.607 1.368 1.276.058 1.686.071 4.948.071 3.258 0 3.668-.013 4.948-.071 1.276-.058 2.548-.31 3.606-1.368 1.058-1.058 1.31-2.331 1.368-3.607.058-1.276.071-1.686.071-4.948 0-3.258-.013-3.668-.071-4.948-.058-1.276-.31-2.548-1.368-3.607-1.058-1.057-2.331-1.31-3.607-1.368C15.668.014 15.258 0 12 0z" />
-            </svg>
+            <Image
+              src="/icons/instagram.png" // URL Gambar
+              alt="Profile Picture"
+              width={24}    // Lebar gambar
+              height={24}   // Tinggi gambar
+              className="hover:scale-125 transition duration-300"
+            />
           </a>
         </div>
 

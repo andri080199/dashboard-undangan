@@ -13,29 +13,29 @@ interface CatalogItem {
 const catalogItems: CatalogItem[] = [
   {
     id: 1,
-    imageUrl: "/images/Hero.png",
-    title: "Desain Modern",
+    imageUrl: "/images/portrait.png",
+    title: "Modern",
     price: "Rp 1.000.000",
     url: "https://myweddblue.vercel.app", // URL untuk tema Desain Modern
   },
   {
     id: 2,
-    imageUrl: "/images/Hero.png",
-    title: "Desain Floral",
+    imageUrl: "/images/portrait.png",
+    title: "Floral",
     price: "Rp 1.200.000",
     url: "https://myweddblue.vercel.app/tema/desain-floral", // URL untuk tema Desain Floral
   },
   {
     id: 3,
-    imageUrl: "/images/Hero.png",
-    title: "Desain Klasik",
+    imageUrl: "/images/portrait.png",
+    title: "Klasik",
     price: "Rp 900.000",
     url: "https://myweddblue.vercel.app/tema/desain-klasik", // URL untuk tema Desain Klasik
   },
   {
     id: 4,
-    imageUrl: "/images/Hero.png",
-    title: "Desain Vintage",
+    imageUrl: "/images/portrait.png",
+    title: "Vintage",
     price: "Rp 1.500.000",
     url: "https://myweddblue.vercel.app/tema/desain-vintage", // URL untuk tema Desain Vintage
   },
@@ -58,13 +58,14 @@ const CatalogSection: React.FC = () => {
               className="bg-darkprimary rounded-2xl shadow-lg shadow-darkprimary overflow-hidden hover:opacity-80 transition-shadow duration-300"
             >
               <div className="relative h-48">
-                <Image
-                  src={item.imageUrl}
-                  alt={item.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-lg"
-                />
+              <Image
+                src={item.imageUrl}
+                alt={item.title}
+                fill
+                style={{ objectFit: 'contain' }}
+                className="rounded-t-lg py-2"
+              />
+                
               </div>
               <div className="p-4 text-center bg-primarylight">
                 <h3 className="text-lg font-semibold text-textprimary mb-2">
