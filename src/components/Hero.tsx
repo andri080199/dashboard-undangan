@@ -23,7 +23,7 @@ const ResponsiveSection: React.FC = () => {
             Buat Undangan Digital Tanpa Ribet
           </h2>
           <p className="mb-6 pt-4 text-primarylight text-sm md:text-lg">
-          "Buat undangan pernikahan yang unik dan mudah dibagikan hanya dalam hitungan menit! Undangan digital kami hadir dengan berbagai template menarik dan bisa disesuaikan dengan tema pernikahan impian Anda."
+          Buat undangan pernikahan yang unik dan mudah dibagikan hanya dalam hitungan menit! Undangan digital kami hadir dengan berbagai template menarik dan bisa disesuaikan dengan tema pernikahan impian Anda.
           </p>
           <div className="flex flex-col md:flex-row justify-center md:justify-start gap-4">
             <WhatsAppButton phoneNumber={"6282375473733"}/>
